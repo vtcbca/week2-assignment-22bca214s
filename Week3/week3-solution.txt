@@ -8,7 +8,7 @@
 
 1. Create table
 ----->
-	import sqlite3 as pp
+	import sqlite3 as se
 	con=PP.connect("ems.db")
 	c="create table employee(eid int primary key,ename text,dept text,basic int,branch text)"
 	cur=con.cursor()
@@ -18,7 +18,7 @@
 
 2. Insert 5 Records directly, 5 records using tuple and 5 records using taking input from user.
 ----->
-	import sqlite3 as pp
+	import sqlite3 as se
 	con=vp.connect("ems.db")
 	cur=con.cursor()
 	#insert record directly
@@ -54,7 +54,7 @@
 
 3. Update records who are from "Surat" branch with increment in salary 10%.
 ----->	
-	import sqlite3 as pp
+	import sqlite3 as se
 	con=pp.connect("ems.db")
 	q3="update employee set basic=basic+(basic*10)/100 where branch='surat'"
 	cur=con.cursor()
@@ -64,7 +64,7 @@
 	
 4. Print All records.
 ----->
-	import sqlite3 sa vp
+	import sqlite3 se
 	con=pp.connect("ems.db")
 	q5="select * from employee"
 	cur=con.cursor()
@@ -81,7 +81,7 @@
 
 5. Print records where dept is "HR" and "IT".
 ----->
-	import sqlite3 as pp
+	import sqlite3 as se
 	con=vp.connect("ems.db")
 	q6="select * from employee where dept in('HR','IT')"
 	cur=con.cursor()
@@ -98,7 +98,7 @@
 
 6. Print records in sorting order of department.
 ----->
-	import sqlite3 as pp
+	import sqlite3 as se
 	con=pp.connect("ems.db")
 	q7="select * from employee order by dept"
 	cur=con.cursor()
@@ -115,7 +115,7 @@
 
 7. Print records where basic is >6000.
 ----->
-	import sqlite3 as 
+	import sqlite3 se
 	con=pp.connect("ems.db")
 	q8="select * from employee where basic>6000"
 	cur=con.cursor()
@@ -132,7 +132,7 @@
 
 8. Print records whrere employee name second character is "r".
 ----->
-	import sqlite3 as pp
+	import sqlite3 as se
 	con=vp.connect("ems.db")
 	q9="select * from employee where ename like'_r%'"
 	cur=con.cursor()
@@ -149,7 +149,7 @@
 
 9. Grouping record of employee who are from "Account" and "Inventory".
 ----->
-	import sqlite3 as pp
+	import sqlite3 as se
 	con=pp.connect("ems.db")
 	q10="select * from employee where dept in('Account','Inventory') group by dept"
 	cur=con.cursor()
@@ -166,7 +166,7 @@
 
 10. Print all records based on branch name in descending order.
 ----->
-	import sqlite3 as pp
+	import sqlite3 as se
 	con=pp.connect("ems.db")
 	q11="select * from employee order by dept desc"
 	cur=con.cursor()
